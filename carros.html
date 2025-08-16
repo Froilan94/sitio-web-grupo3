@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Autos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .menu {
+      display: flex;
+      gap: 50px;
+      padding: 20px;
+    }
+    .columna {
+      text-align: center;
+    }
+    .columna h3 {
+      margin-bottom: 10px;
+    }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .item img {
+      width: 80px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <!-- Columna por tipo -->
+    <div class="columna">
+      <h3>Búsqueda por Tipo</h3>
+      <div class="items">
+        <div class="item"><img src="sedan.png" alt="Sedán"><p>Sedán</p></div>
+        <div class="item"><img src="suv.png" alt="SUV"><p>SUV</p></div>
+        <div class="item"><img src="pickup.png" alt="Pickup"><p>Pickup</p></div>
+        <div class="item"><img src="minivan.png" alt="Minivan"><p>Minivan</p></div>
+      </div>
+    </div>
+
+    <!-- Columna por marca -->
+    <div class="columna">
+      <h3>Búsqueda por Marca</h3>
+      <div class="items">
+        <div class="item"><img src="chevrolet.png" alt="Chevrolet"><p>Chevrolet</p></div>
+        <div class="item"><img src="nissan.png" alt="Nissan"><p>Nissan</p></div>
+        <div class="item"><img src="kia.png" alt="KIA"><p>KIA</p></div>
+        <div class="item"><img src="audi.png" alt="Audi"><p>Audi</p></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
