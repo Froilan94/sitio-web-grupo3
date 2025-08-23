@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GANGA DE AUTOS DEPORTIVOS</title>
 <style>
- body { background-color:blue;
-	textcolor:yellow}
+ body {
+    background-image: url("img/Toyota-GR-Supra-A90-Final-Edition-teaser.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: yellow; /* aquí era 'textcolor', lo correcto es 'color' */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
+/* Estilo de botones */
+.boton {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
 </style>
 </head>
 <body style="margin:0; padding:0;">
@@ -16,6 +43,12 @@
     </div>
     <div style="background-color: rgb(94, 94, 94); text-align: center; padding: 30px 0;">
         <p style="margin:0; color: white;">¡Aquí puede encontrar las mejores marcas de autos deportivos!</p>
+    </div>
+
+    <!-- Botones debajo -->
+    <div style="padding: 40px; text-align: center;">
+        <a href="carros.html" class="boton">Ver Autos</a>
+        <a href="Repuestos.html" class="boton">Ver Repuestos</a>
     </div>
 </body>
 </html>
